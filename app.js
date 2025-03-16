@@ -18,3 +18,5 @@ app.get('/professional', (req, res) => res.render('professional'));
 app.listen(port, () => {
     console.log(`Portfolio app listening at http://localhost:${port}`);
 });
+// at the end of app.js
+module.exports = app;
