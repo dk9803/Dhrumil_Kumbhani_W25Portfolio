@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Experience - Dhrumil Kumbhani</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: box-shadow 0.3s, transform 0.3s, border 0.3s;
+            border: 2px solid transparent;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .card:active, .card:focus {
+            border-color: red;
+        }
+        h1, h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/personal">Personal</a>
+        <a href="/academic">Academic</a>
+        <a href="/professional">Professional</a>
+    </nav>
+
+    <div class="container">
+        <h1>Professional Experience</h1>
+
+        <div class="card">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>Front-end Developer Intern</strong> – XYZ Web Solutions, Toronto, ON (2024)
+                    <ul>
+                        <li>Designed and implemented responsive websites using React and JavaScript.</li>
+                        <li>Improved UI/UX design, enhancing user engagement.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Professional Projects</h2>
+            <ul>
+                <li><a href="#">E-commerce Website:</a> Interactive frontend developed using React and Tailwind CSS.</li>
+                <li><a href="#">Company Landing Page:</a> Sleek, user-friendly landing page enhancing accessibility and engagement.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Community Service & Volunteer Work</h2>
+            <ul>
+                <li><strong>Web Developer Volunteer</strong> – Local Community Organization
+                    <ul>
+                        <li>Built responsive websites for community initiatives and improved their SEO performance.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Awards & Recognition</h2>
+            <ul>
+                <li>Recognition for Excellence in Web Development, 2024</li>
+                <li>Best Responsive Design Award, College Web Expo (2025)</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dhrumil Kumbhani</p>
+    </footer>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                cards.forEach(c => c.style.border = '2px solid transparent');
+                card.style.border = '2px solid red';
+            });
+        });
+    </script>
+</body>
+</html>
